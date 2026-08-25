@@ -4,460 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AES Solar Energy | Reliable Solar Power Solutions</title>
+    <title>AES Solar Energy | Solar & Inverter Solutions</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta name="description" content="AES Solar Energy provides professional solar and inverter installation, CCTV camera installation, consultation and training.">
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* NAVIGATION */
-        header {
-            background: #ffffff;
-            padding: 15px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo img {
-            width: 180px;
-            max-height: 60px;
-            object-fit: contain;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #222;
-            margin-left: 20px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #1f9d45;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            padding: 80px 7%;
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.70),
-                rgba(0, 0, 0, 0.70)),
-                url("solar-bg.jpg") center/cover no-repeat;
-            color: white;
-        }
-
-        .hero-content {
-            max-width: 750px;
-        }
-
-        .welcome {
-            color: #66e38c;
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 {
-            font-size: 55px;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 19px;
-            margin-bottom: 30px;
-            max-width: 650px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 25px;
-            background: #1f9d45;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-right: 10px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #147532;
-        }
-
-        .btn-white {
-            background: white;
-            color: #1f9d45;
-        }
-
-        .btn-white:hover {
-            background: #eeeeee;
-        }
-
-        /* GENERAL SECTION */
-        section {
-            padding: 80px 7%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 38px;
-            margin-bottom: 10px;
-        }
-
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        /* SERVICES */
-        .services {
-            background: #f6f8f6;
-        }
-
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 30px 25px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-        }
-
-        .service-icon {
-            font-size: 45px;
-            margin-bottom: 15px;
-        }
-
-        .service-card h3 {
-            color: #1f9d45;
-            margin-bottom: 12px;
-        }
-
-        /* ABOUT */
-        .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .about-text h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .about-text h4 {
-            color: #1f9d45;
-            margin-bottom: 15px;
-        }
-
-        .about-text p {
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        /* PROCESS */
-        .process {
-            background: #123b20;
-            color: white;
-        }
-
-        .process .section-title p {
-            color: #dddddd;
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-        }
-
-        .process-card {
-            text-align: center;
-            padding: 25px 15px;
-        }
-
-        .number {
-            width: 60px;
-            height: 60px;
-            background: #1f9d45;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 15px;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        /* CALL TO ACTION */
-        .cta {
-            background: #1f9d45;
-            text-align: center;
-            color: white;
-        }
-
-        .cta h2 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            margin-bottom: 25px;
-            font-size: 18px;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 30px 7%;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 900px) {
-
-            header {
-                padding: 12px 5%;
-            }
-
-            nav a {
-                margin-left: 8px;
-                font-size: 13px;
-            }
-
-            .hero {
-                padding: 70px 5%;
-                min-height: 600px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .service-grid,
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .about-container {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 60px 5%;
-            }
-        }
-
-        @media (max-width: 600px) {
-
-            header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .logo img {
-                width: 150px;
-            }
-
-            .hero h1 {
-                font-size: 34px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .service-grid,
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title h2,
-            .about-text h2,
-            .cta h2 {
-                font-size: 30px;
-            }
-
-            .btn {
-                margin-bottom: 10px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
     <header>
-        <div class="logo">
-            <a href="#home">
-                <img src="AES_website_logo_300x100.png"
-                     alt="AES Solar Energy Logo">
-            </a>
-        </div>
+        <div class="container navbar">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#process">How We Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <a href="index.html" class="logo">
+                <!-- Replace this placeholder with your logo later -->
+                <div class="logo-placeholder">AES</div>
+
+                <div class="logo-text">
+                    AES <span>Solar</span> Energy
+                </div>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <!-- Navigation -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
     </header>
 
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="container">
 
-        <div class="hero-content">
+            <div class="hero-content">
 
-            <p class="welcome">
-                WELCOME TO AES SOLAR ENERGY
-            </p>
+                <h1>
+                    Power Your Life With
+                    <span>Clean Solar Energy</span>
+                </h1>
 
-            <h1>
-                Reliable Solar Power Solutions for Your Home & Business
-            </h1>
+                <p>
+                    AES Solar Energy provides reliable solar and inverter
+                    solutions for homes, businesses and organizations.
+                    We also offer CCTV camera installation, consultation
+                    and professional training.
+                </p>
 
-            <p>
-                AES Solar Energy provides professional solar installation,
-                inverters, lithium batteries, solar panels and reliable
-                energy solutions designed to give you uninterrupted power.
-            </p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn">Get a Free Consultation</a>
 
-            <!-- CHANGE THE WHATSAPP NUMBER BELOW -->
-            <a href="https://wa.me/234XXXXXXXXXX"
-               class="btn"
-               target="_blank">
-                Get a Free Consultation
-            </a>
+                    <a href="services.html" class="btn btn-outline">
+                        Explore Our Services
+                    </a>
+                </div>
 
-            <a href="#services"
-               class="btn btn-white">
-                View Our Services
-            </a>
+            </div>
 
         </div>
-
     </section>
 
 
-    <!-- SERVICES -->
-    <section class="services" id="services">
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
 
-        <div class="section-title">
-            <h2>Our Solar Services</h2>
+        <div class="container">
 
-            <p>
-                Professional and reliable solar energy solutions
-                for homes, offices and businesses.
-            </p>
-        </div>
+            <div class="feature-grid">
 
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
 
-        <div class="service-grid">
+                    <h3>Quality Solar Solutions</h3>
 
-            <div class="service-card">
-
-                <div class="service-icon">☀️</div>
-
-                <h3>Solar System Installation</h3>
-
-                <p>
-                    Professional installation of complete solar
-                    systems for reliable and uninterrupted power.
-                </p>
-
-            </div>
+                    <p>
+                        Reliable solar and inverter systems designed
+                        for your power needs.
+                    </p>
+                </div>
 
 
-            <div class="service-card">
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
 
-                <div class="service-icon">🔋</div>
+                    <h3>Professional Installation</h3>
 
-                <h3>Inverter & Battery Solutions</h3>
-
-                <p>
-                    Quality inverters and lithium battery systems
-                    designed for your energy needs.
-                </p>
-
-            </div>
+                    <p>
+                        Expert installation of solar systems,
+                        inverters and CCTV cameras.
+                    </p>
+                </div>
 
 
-            <div class="service-card">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
 
-                <div class="service-icon">⚡</div>
+                    <h3>Training & Consultation</h3>
 
-                <h3>Solar Panel Installation</h3>
-
-                <p>
-                    Efficient solar panel installation and proper
-                    system sizing for maximum energy production.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">🛠️</div>
-
-                <h3>System Maintenance</h3>
-
-                <p>
-                    Professional inspection, troubleshooting,
-                    repairs and maintenance for your solar system.
-                </p>
+                    <p>
+                        Learn practical solar, inverter and CCTV
+                        installation skills from professionals.
+                    </p>
+                </div>
 
             </div>
 
@@ -466,45 +124,122 @@
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about">
+    <!-- ================= ABOUT PREVIEW ================= -->
+    <section class="about-preview">
 
-        <div class="about-container">
+        <div class="container">
 
-            <div class="about-image">
+            <div class="about-grid">
 
-                <!-- CHANGE THIS TO YOUR OWN SOLAR PROJECT IMAGE -->
-                <img src="solar-project.jpg"
-                     alt="AES Solar Energy Project">
+                <!-- Image Placeholder -->
+                <div class="image-placeholder">
+                    <p>
+                        YOUR AES SOLAR ENERGY<br>
+                        COMPANY OR PROJECT IMAGE<br>
+                        WILL GO HERE
+                    </p>
+                </div>
+
+
+                <div class="about-content">
+
+                    <h2>Your Trusted Solar Energy Partner</h2>
+
+                    <p>
+                        At AES Solar Energy, we are committed to providing
+                        reliable, affordable and professional renewable
+                        energy solutions.
+                    </p>
+
+                    <p>
+                        From solar and inverter installations to CCTV
+                        camera installations, consultation and practical
+                        training, we help individuals and businesses get
+                        the right solutions for their needs.
+                    </p>
+
+                    <a href="about.html" class="btn">
+                        Learn More About Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES PREVIEW ================= -->
+    <section>
+
+        <div class="container">
+
+            <h2 class="section-title">Our Services</h2>
+
+            <p class="section-subtitle">
+                Professional services designed to provide reliable
+                energy, security and technical solutions.
+            </p>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="icon">☀️</div>
+
+                    <h3>Solar Installation</h3>
+
+                    <p>
+                        Professional installation of solar panels,
+                        batteries and complete solar power systems.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">⚡</div>
+
+                    <h3>Inverter Installation</h3>
+
+                    <p>
+                        Reliable inverter and backup power systems
+                        for homes and businesses.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">📹</div>
+
+                    <h3>CCTV Installation</h3>
+
+                    <p>
+                        Professional CCTV camera installation for
+                        homes, offices, shops and businesses.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">🎓</div>
+
+                    <h3>Training & Consultation</h3>
+
+                    <p>
+                        Practical training and expert consultation
+                        for solar, inverter and CCTV solutions.
+                    </p>
+                </div>
 
             </div>
 
 
-            <div class="about-text">
-
-                <h4>ABOUT AES SOLAR ENERGY</h4>
-
-                <h2>
-                    Powering Your Home and Business with Clean Energy
-                </h2>
-
-                <p>
-                    We provide reliable and affordable solar energy
-                    solutions designed to give homes and businesses
-                    dependable electricity.
-                </p>
-
-                <p>
-                    From system design and load assessment to
-                    professional installation and after-sales support,
-                    AES Solar Energy is committed to delivering
-                    quality service and reliable power solutions.
-                </p>
-
-                <a href="#contact" class="btn">
-                    Contact Us Today
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn">
+                    View All Services
                 </a>
-
             </div>
 
         </div>
@@ -512,63 +247,87 @@
     </section>
 
 
-    <!-- PROCESS -->
-    <section class="process" id="process">
+    <!-- ================= PROJECTS PREVIEW ================= -->
+    <section class="projects">
 
-        <div class="section-title">
+        <div class="container">
 
-            <h2>How We Work</h2>
+            <h2 class="section-title">Our Recent Projects</h2>
 
-            <p>
-                Our simple process for delivering the right solar
-                solution for you.
+            <p class="section-subtitle">
+                Some examples of the solar and power solutions
+                delivered by AES Solar Energy.
             </p>
 
-        </div>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        SOLAR PROJECT IMAGE
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Residential Solar Installation</h3>
+
+                        <p>
+                            A reliable solar power solution designed
+                            for a residential property.
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-        <div class="process-grid">
+                <div class="project-card">
 
-            <div class="process-card">
-                <div class="number">1</div>
-                <h3>Customer Inquiry</h3>
-                <p>Tell us about your power needs.</p>
+                    <div class="project-image">
+                        INVERTER PROJECT IMAGE
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Inverter Backup System</h3>
+
+                        <p>
+                            A backup power solution designed to
+                            provide reliable electricity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        CCTV PROJECT IMAGE
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>CCTV Security Installation</h3>
+
+                        <p>
+                            Professional CCTV camera installation
+                            for improved security and monitoring.
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="process-card">
-                <div class="number">2</div>
-                <h3>Load Assessment</h3>
-                <p>We calculate your appliances and energy needs.</p>
-            </div>
 
-            <div class="process-card">
-                <div class="number">3</div>
-                <h3>System Design</h3>
-                <p>We recommend the right solar solution.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="number">4</div>
-                <h3>Site Inspection</h3>
-                <p>We inspect your location when necessary.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="number">5</div>
-                <h3>Customer Approval</h3>
-                <p>You approve the recommended solution.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="number">6</div>
-                <h3>Professional Installation</h3>
-                <p>Our team installs and tests your system.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="number">7</div>
-                <h3>After-Sales Support</h3>
-                <p>We remain available to support your system.</p>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="projects.html" class="btn">
+                    View Our Projects
+                </a>
             </div>
 
         </div>
@@ -576,42 +335,247 @@
     </section>
 
 
-    <!-- CONTACT -->
-    <section class="cta" id="contact">
+    <!-- ================= SHOP PREVIEW ================= -->
+    <section>
 
-        <h2>Ready to Enjoy Reliable Solar Power?</h2>
+        <div class="container">
 
-        <p>
-            Contact AES Solar Energy today for professional advice
-            and the right solar solution for your needs.
-        </p>
+            <h2 class="section-title">Shop Solar Products</h2>
 
-        <!-- CHANGE THE WHATSAPP NUMBER BELOW -->
-        <a href="https://wa.me/234XXXXXXXXXX"
-           class="btn btn-white"
-           target="_blank">
-            Chat With Us on WhatsApp
-        </a>
+            <p class="section-subtitle">
+                Quality solar and inverter products for your
+                home and business power needs.
+            </p>
+
+
+            <div class="shop-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        SOLAR PANEL IMAGE
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Solar Panels</h3>
+
+                        <p>
+                            High-quality solar panels for reliable
+                            energy generation.
+                        </p>
+
+                        <a href="shop.html" class="btn">
+                            View Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        BATTERY IMAGE
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Solar Batteries</h3>
+
+                        <p>
+                            Tubular and lithium batteries for
+                            reliable energy storage.
+                        </p>
+
+                        <a href="shop.html" class="btn">
+                            View Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        INVERTER IMAGE
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Inverters</h3>
+
+                        <p>
+                            Reliable solar and inverter systems
+                            for homes and businesses.
+                        </p>
+
+                        <a href="shop.html" class="btn">
+                            View Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        ACCESSORIES IMAGE
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Accessories</h3>
+
+                        <p>
+                            Complete solar and inverter accessories
+                            and protection equipment.
+                        </p>
+
+                        <a href="shop.html" class="btn">
+                            View Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="shop.html" class="btn">
+                    Visit Our Shop
+                </a>
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="page-banner">
+
+        <div class="container">
+
+            <h1>Ready to Switch to Reliable Power?</h1>
+
+            <p style="margin-bottom: 25px;">
+                Contact AES Solar Energy today for professional
+                solar and inverter solutions.
+            </p>
+
+            <a href="contact.html" class="btn">
+                Contact Us Today
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
     <footer>
 
-        <p>
-            <strong>AES Solar Energy</strong>
-        </p>
+        <div class="container">
 
-        <p>
-            Reliable • Affordable • Professional
-        </p>
+            <div class="footer-grid">
 
-        <p>
-            © 2026 AES Solar Energy. All Rights Reserved.
-        </p>
+                <div>
+
+                    <div class="footer-logo">
+                        AES Solar Energy
+                    </div>
+
+                    <p>
+                        Reliable solar, inverter and security solutions
+                        for homes, businesses and organizations.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="footer-title">Our Services</h3>
+
+                    <ul class="footer-links">
+
+                        <li>Solar Installation</li>
+                        <li>Inverter Installation</li>
+                        <li>CCTV Installation</li>
+                        <li>Consultation</li>
+                        <li>Technical Training</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 AES Solar Energy. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
 
     </footer>
+
+
+    <!-- ================= WHATSAPP BUTTON ================= -->
+    <!-- Replace 2348000000000 with your WhatsApp number -->
+
+    <a
+        href="https://wa.me/2348000000000"
+        class="whatsapp-float"
+        target="_blank"
+        title="Chat with us on WhatsApp"
+    >
+        💬
+    </a>
+
+
+    <!-- ================= MOBILE MENU SCRIPT ================= -->
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("navLinks")
+                .classList
+                .toggle("show");
+
+        }
+
+    </script>
 
 </body>
 </html>
